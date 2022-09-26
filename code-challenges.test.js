@@ -177,19 +177,19 @@ output 2: []
 // 2. 83 - 23 = 60
 // 3. 60 - 9 = 51
 
-const arrSummation = (arr) => {
-  // Setting the starting value of our temporary variable to 0. This will be updated as .map() runs and stores the result of adding the value to it.
-  let theAccumulator = 0;
+// const arrSummation = (arr) => {
+//   // Setting the starting value of our temporary variable to 0. This will be updated as .map() runs and stores the result of adding the value to it.
+//   let theAccumulator = 0;
 
-  // If the array is empty, return an empty array.
-  return arr.length === 0
-    ? []
-    : arr.map((v) => {
-        // Setting the current value to: (value) + (the value stored in theAccumulator)
-        v = v + theAccumulator;
-        // Setting theAccumulator to store the current value so it can be used in the next iteration.
-        theAccumulator = v;
-        // Returning the value to the array.
-        return v;
-      });
-};
+//   // If the array is empty, return an empty array.
+//   return arr.length === 0
+//     ? []
+//     : arr.map((v) => {
+//         // Setting the current value to: (value) + (the value stored in theAccumulator)
+//         v = v + theAccumulator;
+//         // Setting theAccumulator to store the current value so it can be used in the next iteration.
+//         theAccumulator = v;
+//         // Returning the value to the array.
+//         return v;
+//       });
+// };
